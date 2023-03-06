@@ -1,4 +1,4 @@
-    .navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
   color: gold;
 }
 .navbar-inverse .navbar-brand {
@@ -24,16 +24,49 @@
     margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    background-color: black;
+    background-color: gold;
     
+
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: black;
+}
+
+.navbar-inverse .container-fluid .navbar-header div.logo >img {
+    border-right: 15px;
 }
 
 
 
-
 @media (min-width: 768px){
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: gold;
+        border: 0;
+        /* -webkit-box-shadow: none; */
+        box-shadow: none;
+    }
+
     .collapse .navbar-collapse {
     background-color: black !important;
 } 
 
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color: gold;
+}
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 10%);
+    -webkit-overflow-scrolling: touch;
+    FLOAT: RIGHT;
 }
