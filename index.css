@@ -13,7 +13,7 @@
     background-color: transparent;
     border-color: #101010;
     /* width:100%; */
-    float: right;
+    text-align: right;
 }
 
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
