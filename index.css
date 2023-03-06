@@ -1,0 +1,13 @@
+    .navbar-inverse .navbar-nav > li > a {
+  color: gold;
+}
+.navbar-inverse .navbar-brand {
+  color: gold;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: gold;
+  background-color: transparent;
+}
+.collapse .navbar-collapse .dropdown-menu {
+  background-color: black;
+}
