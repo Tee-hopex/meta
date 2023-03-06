@@ -10,9 +10,9 @@
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    background-color: black;
+    background-color: transparent;
     border-color: #101010;
-    width:320px;
+    /* width:100%; */
     float: right;
 }
 
