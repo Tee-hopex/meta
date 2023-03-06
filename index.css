@@ -1,0 +1,39 @@
+    .navbar-inverse .navbar-nav > li > a {
+  color: gold;
+}
+.navbar-inverse .navbar-brand {
+  color: gold;
+}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+  color: gold;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: black;
+    border-color: #101010;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background-color: black;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: black;
+    
+}
+
+
+
+
+@media (min-width: 768px){
+    .collapse .navbar-collapse {
+    background-color: black !important;
+} 
+
+}
