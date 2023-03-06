@@ -1,0 +1,182 @@
+/* BODY */
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+body {
+    margin: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* user agent stylesheet */
+body {
+    display: block;
+    margin: 8px;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* NAV BAR */
+nav {
+    display: block;
+}
+
+/* NAV INVERSE */
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* user agent stylesheet */
+nav {
+    display: block;
+}
+
+/* NAV CONTAINER FLUID */
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* NAVBAR-HEADER */
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background-color: black;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* BUTTON */
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+/* IMG */
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+/* NAVBAR-COLLAPSE COLLAPSE */
+element.style {
+    height: 1px;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background-color: black;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: black;
+    border-color: #101010;
+}
+
+/* UL */
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* LI */
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+/* DROPDOWN-TOGGLE */
+.navbar-inverse .navbar-nav > li > a {
+    color: gold;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* DROPDOWN-MENU */
