@@ -3,6 +3,11 @@
   text-align: left;
   width:100%;
 }
+
+.caret {
+  margin-right: 6px;
+  float: right
+}
 .navbar-inverse .navbar-brand {
   color: gold;
   text-align: left;
