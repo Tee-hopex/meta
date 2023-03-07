@@ -62,7 +62,7 @@
 }
 
 .Wrapper_wrapper__Cfg58 {
-  height: 600px;
+  height: 400px;
   background-image: var(--mobile-bg);
   background-size:cover;
   
@@ -91,7 +91,7 @@
   text-align: center;
   padding: 10px;
   background-color: #f7a600;
-  border-radius: 7px;
+  border-radius: 15px;
   color: black;
 }
 
@@ -105,6 +105,61 @@
   color: white;
 }
 
+.Card_bannerCard__MQE5v .Card_image__HC4jH {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:transform .2s;
+}
+
+/* .footer-cointainer{
+  background: #085fe2;
+  padding:24px;
+  display: flex;
+  justify-content: center;
+  padding: var(--size-40) 120px;
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+.footer-cointainer a.dropdown-toggle */
+
+footer ul {
+  display: block;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+footer .dropdown.active .dropdown-menu {
+  display: block;
+}
+
+footer .dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+footer .dropdown-menu li:last-child {
+  border-bottom: none;
+}
 
 @media (min-width: 767px){
   .navbar-nav .open ul.dropdown-menu {
