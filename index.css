@@ -1,5 +1,5 @@
 .navbar-inverse .navbar-nav > li > a {
-  color: gold;
+  color:#f7a600;
   text-align: left;
   width:100%;
 }
@@ -9,12 +9,12 @@
   float: right
 }
 .navbar-inverse .navbar-brand {
-  color: gold;
+  color:#f7a600;
   text-align: left;
   width:100%;
 }
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
-  color: gold;
+  color: #f7a600;
   background-color: transparent;
 }
 
@@ -78,7 +78,7 @@
 .Wrapper_wrapper__Cfg58.Custom_content__s9qmn >.slogan{
   margin:0 auto;
   width: 327px;
-  color: gold;
+  color: #f7a600;
   font-weight: 700;
   font-size: large;
 }
@@ -90,7 +90,7 @@
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  background-color: gold;
+  background-color: #f7a600;
   border-radius: 7px;
   color: black;
 }
@@ -112,7 +112,7 @@
     float: none;
     width: auto;
     margin-top: 0;
-    background-color: gold !important;
+    background-color: #f7a600 !important;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -125,7 +125,7 @@
 } 
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-    color: gold;
+    color: #f7a600;
 }
 
 
