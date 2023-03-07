@@ -61,6 +61,49 @@
     border-right: 15px;
 }
 
+.Wrapper_wrapper__Cfg58 {
+  height: 600px;
+  background-image: var(--mobile-bg);
+  background-size:cover;
+  
+} 
+.Wrapper_wrapper__Cfg58.Custom_content__s9qmn{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 24px;
+  
+}
+.Wrapper_wrapper__Cfg58.Custom_content__s9qmn >.slogan{
+  margin:0 auto;
+  width: 327px;
+  color: gold;
+  font-weight: 700;
+  font-size: large;
+}
+
+.Wrapper_wrapper__Cfg58.Custom_content__s9qmn >.learn-button{
+  margin-top: 24px;
+  margin:0 auto;
+  width: 327px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  background-color: gold;
+  border-radius: 7px;
+  color: black;
+}
+
+.Wrapper_wrapper__Cfg58.Custom_content__s9qmn >.learn-button .learn-more{
+  color: black;
+  font-size: large;
+  font-weight: 600;
+}
+.Wrapper_wrapper__Cfg58.Custom_content__s9qmn >.learn-button.learn-more :hover{
+  text-decoration: none;
+  color: white;
+}
 
 
 @media (min-width: 767px){
@@ -105,5 +148,8 @@
 #tradingview_810df-wrapper.chart{
   width:100%;
 }
+
+
+
 }
 
