@@ -160,7 +160,6 @@ border-radius: 50px;
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .footer-item {
@@ -219,10 +218,17 @@ border-radius: 50px;
   height: 40px;
   justify-content: center;
   line-height: 14px;
+  padding: 20px;
 }
 
 .by-footer-large-cr__terms > a {
   color: #121214;
+  margin:0px 0px 10px
+}
+.toggle {
+  padding: 0px 30px 0px 24px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
