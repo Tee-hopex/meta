@@ -6,13 +6,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body style="background-color: aliceblue;">
 
-<nav class="navbar navbar-inverse">
+<nav style="position: fixed; top: 0; width: 100%; z-index: 1000;" class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -20,7 +22,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="assets/logo3.png" alt="Coinmeta" height="20px" />
+        <img style="height: 50px;" src="assets/logo3.png" alt="Coinmeta" />
+      
+      
           <!-- <a class="navbar-brand" href="#">Coinmeta</em></a> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -28,7 +32,7 @@
         <!-- <li class="active"><a href="#">Home</a></li> -->
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Buy Crypto<span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <ul style="background-color:#f7a600" class="dropdown-menu ">
             <!-- tODO: ADD BUY CRYPTO DETAILS -->
             <li><a href="#">One-Click Buy</a></li>
             <li><a href="#">P2P Trading (0 Fees)</a></li>
@@ -44,8 +48,8 @@
         </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Markets<span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Market<span class="caret"></span></a>
+          <ul style="background-color:#f7a600" class="dropdown-menu">
             <li><a href="#">Market Overview</a></li>
             <li><a href="#">Market Data</a></li>
             <li><a href="#">Launch</a></li>
@@ -53,7 +57,7 @@
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Trade<span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <ul style="background-color:#f7a600" class="dropdown-menu">
             <li><a href="">Spot Trading</a>
               <a href="">Convert</a>
               <a href="">Leveraged Tokens</a>
@@ -68,75 +72,663 @@
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Derivatives<span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <ul style="background-color:#f7a600" class="dropdown-menu">
             <li><a href="">Derivatives Portal</a>
               <a href="">USDT Perpetual</a>
               <a href="">Copy Trading</a>
               <a href="">USDC Perpetual</a>
               <a href="">USDC Options</a>
               <a href="">Inverse Contracts</a>
-              <span>More Than Derivatives</span></li>
+              <!-- <span >More Than Derivatives</span> -->
+            </li>
             <!-- TODO: Add derivatives details -->
             <!-- <li><a href="#">Market Overview</a></li>
             <li><a href="#">Market Data</a></li>
             <li><a href="#">Launch</a></li> -->
-        </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-          <!-- todo add tools details -->
-          <li><a href="">Tools Discovery</a>
-            <a href="">Copy Trading</a>
-            <a href="">Trading Bot</a>
-            <a href="">Leaderboard</a>
-            <a href="">MetaTrader 4</a></li>
-        </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Finance<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <!-- Todo: add finance details -->
-        </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Web3<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <!-- todo: add web3 details -->
-        </ul>
-        </li>
-       
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >Tools<span class="caret"></span
+              ></a>
+              <ul style="background-color:#f7a600" class="dropdown-menu">
+                <!-- todo add tools details -->
+                <li>
+                  <a href="">Tools Discovery</a>
+                  <a href="">Copy Trading</a>
+                  <a href="">Trading Bot</a>
+                  <a href="">Leaderboard</a>
+                  <a href="">MetaTrader 4</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >Finance<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <!-- Todo: add finance details -->
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >Web3<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <!-- todo: add web3 details -->
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+        
+        
+
+    </nav>
+
+    
+
+
+    <div class="Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/background\ new.jpg); --mobile-bg:url(assets/background\ new.jpg);background-color:#202020">
+      <div style="padding-bottom: 24px;" class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn">
+        <!-- <div class="slogan">
+          <p class="slogan_title">Sprint into Crypto Spring</p>
+          <p class="slogan_title-description">Relearn, Reset and Refresh with Bybit Learn</p>
+        </div> -->
+        <div class="learn-button">
+          <a style="text-decoration: none;" class="learn-more" href="#">Learn More <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+        </div>
+        <!-- <div class="Custom_registerDownloadGroup__eJUXn custom-spotlight-register-download">
+          <div class="Custom_downloadModule__ErW7w">
+            <div class="Download_downloadItem__BNY40" data-name="apple">
+            <div class="Download_downloadList__P_jTP">
+                <a class="Download_button__fS3kk" title="apple" href="#"></a></div>
+                <div class="Download_downloadItem__BNY40" data-name="google">
+                  <a class="Download_button__fS3kk" title="google" href=""></a>
+                </div>
+                <div class="Download_downloadItem__BNY40" data-name="code">
+                  <div class="Download_qrCodeButton__fBXBi Download_button__fS3kk">
+                  </div>
+                  <div class="Download_qrCodeWrapper__pcjX_">
+                    <div class="Download_arrowTop__jczga">
+                    </div>
+                    <div class="Download_qrCodeContent__AAJq3">
+                      <p class="Download_qrCodeLabel__c_5_g">Scan code to download APP</p>
+                      <div class="Download_qrCodeImage__INtdY">
+                        <span style="box-sizing:border-box;display:inline-block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative;max-width:100%">
+                          <span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;max-width:100%">
+                            <img style="display:block;max-width:100%;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0" alt="" aria-hidden="true" src="">
+                          </span>
+                          <img alt="qrCode" src="assets/main.png" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                        </span></div></div></div></div></div></div></div> -->
+                      </div>
+                    </div>
+                      
+    
+
+
+      
+    <div class="media">
+      <!-- <div class="media-left media-middle">
+        <img  src="assets/main.png" class="media-object" style="width: 300px">
+      </div> -->
+      <br>
+      <div class="">
+        <img alt="Spring Copy Trading Party" src="https://www.bybit.com/bycsi-root/bybit/deadpool/792ba306bbf711edb6602a12ad88b2d5.png" decoding="async" data-nimg="fill" class="Card_image__HC4jH" style="position:relative; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position:center;">
+      </div>
+      <div class="">
+        <h1 class=""></h1>
+        <p></p>
+      </div>
     </div>
+    <div  style="position: relative;box-sizing: content-box;width: 400px;height: calc(610px - 32px);margin: 0 auto !important;padding: 0 !important;font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;">
+      <div class="chart" style="width: 400px;height: calc(610px - 32px);background: transparent;padding: 0 !important;">
+      <iframe  src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_810df&amp;symbol=BINANCE%3ABTCUSDT&amp;interval=60&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;watchlist=BINANCE%3AETHUSDT%1FBINANCE%3ADOGEUSDT&amp;studies=%5B%5D&amp;theme=dark&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utm_source=cassoexchange.co&amp;utm_medium=widget_new&amp;utm_campaign=chart&amp;utm_term=BINANCE%3ABTCUSDT#%7B%22page-uri%22%3A%22cassoexchange.co%2Findex.html%22%7D" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" allowtransparency="true" scrolling="no" allowfullscreen="" frameborder="0"></iframe></div></div> 
+    </div>
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+  
+
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
- 
       <!-- Wrapper for slideps -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="assets/background.jpg" alt="Los Angeles">
+          <div class="slogan-wrap">
+            <div class="Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/image\ 1.png); --mobile-bg:url(assets/image\ 1.png);background-color:#202020; border-radius: 25px; width:327px; height:184px; margin: 0px; padding: 0px !important">
+              <div style="padding-bottom: 0px; padding-left: 0px; border-radius:20px;width:327px; height:184px" class="background-half Wrapper_wrapper__Cfg58 Custom_content__s9qmn">
+                <div style="height: 100px; color: black; text-align: left;" class="slogan">
+                  <p class="slogan_title"></p>
+                  <p class="slogan_title-description"></p>
+                </div>
+                <div style= "border-radius: 0px; text-align: left; margin: 0px; line-height: 28px; padding:13px 24px 0px; height: 92px; width: 100%; background-color: whitesmoke; opacity: 0.99;" class="Half-block">
+                  <div class="string-half">
+                    who is the boss
+                  </div>
+                  <p style="font-size: 14px"> come and see what the lord has done for me</p>
+                </div>
+              </div>
+          </div>
         </div>
-    
-        <div class="item">
-          <img src="assets/background.jpg" alt="Chicago">
-        </div>
-    
-        <div class="item">
-          <img src="assets/background.jpg" alt="New York">
+    </div> 
+  
+      <div class="item">
+        <div class="slogan-wrap">
+          <div class="Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/image\ 1.png); --mobile-bg:url(assets/image\ 1.png);background-color:#202020; border-radius: 25px; width:327px; height:184px; margin: 0px; padding: 0px !important">
+            <div style="padding-bottom: 0px; padding-left: 0px; border-radius:20px;width:327px; height:184px" class="background-half Wrapper_wrapper__Cfg58 Custom_content__s9qmn">
+              <div style="height: 100px; color: black; text-align: left;" class="slogan">
+                <p class="slogan_title"></p>
+                <p class="slogan_title-description"></p>
+              </div>
+              <div style= "border-radius: 0px; text-align: left; margin: 0px; line-height: 28px; padding:13px 24px 0px; height: 92px; width: 100%; background-color: whitesmoke; opacity: 0.99;" class="Half-block">
+                <div class="string-half">
+                  who is the boss
+                </div>
+                <p style="font-size: 14px"> come and see what the lord has done for me</p>
+              </div>
+            </div>
         </div>
       </div>
+      </div>
+  
+      <div class="item">
+        <div class="slogan-wrap">
+          <div class="Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/image\ 1.png); --mobile-bg:url(assets/image\ 1.png);background-color:#202020; border-radius: 25px; width:327px; height:184px; margin: 0px; padding: 0px !important">
+            <div style="padding-bottom: 0px; padding-left: 0px; border-radius:20px;width:327px; height:184px" class="background-half Wrapper_wrapper__Cfg58 Custom_content__s9qmn">
+              <div style="height: 100px; color: black; text-align: left;" class="slogan">
+                <p class="slogan_title"></p>
+                <p class="slogan_title-description"></p>
+              </div>
+              <div style= "border-radius: 0px; text-align: left; margin: 0px; line-height: 28px; padding:13px 24px 0px; height: 92px; width: 100%; background-color: whitesmoke; opacity: 0.99;" class="Half-block">
+                <div class="string-half">
+                  who is the boss
+                </div>
+                <p style="font-size: 14px"> come and see what the lord has done for me</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+  </div> 
+</div> 
+
+
+
+
+
+<div style="background-color: white; height: 397px !important; width: 327px !important; border-radius: 12px;padding: 15px 0px; " class="container">
+  <div style="margin: 0px 16px; padding: 0px 24px">
+    <h1 style="font-weight: 650; text-align: left;">
+      Hot Coins
+    </h1>
+  </div>
+  <div style="padding: 24px !important; height: 64px; width: 279px;;" class="content">
     
+      <div class="row">    
+        <div style="float: left;">
+          <li>
+            <img src="assets/mask.svg" alt="" float="left" height="32" width="32" padding="">
+          </li>
+        </div>
+      
+        <div class="col-9" style="float: none; margin: 0 auto; padding: 0px 0px 0px 8px">
+          <li style="float:top left" class="left-top">
+            <p style="margin: 0; padding: 0px" >MASK/USDT</p>
+          </li>
+          <li style="float:bottom left" class="left-bottom">
+            <p> <b><b>3.8486</b></b></p>
+          </li>
+        </div>
+      
+        <div class="right col-1" style="float: right;">
+          <li class="right-top">
+            <p style="color: #20b26c; padding-left: 20px">+16.63%</p>
+          </li>
+          <li class="right bottom" style="text-align: right;">
+            <p>VOL780.58K</p>
+          </li>
+        </div>
+        <hr>
+      </div>         
+  </div>
+
+  <div style="padding: 24px !important; height: 64px; width: 279px;;" class="content">
     
-    </div>
+    <div class="row">    
+      <div style="float: left;">
+        <li>
+          <img src="assets/mask.svg" alt="" float="left" height="32" width="32" padding="">
+        </li>
+      </div>
+    
+      <div class="col-9" style="float: none; margin: 0 auto; padding: 0px 0px 0px 8px">
+        <li style="float:top left" class="left-top">
+          <p style="margin: 0; padding: 0px" >MASK/USDT</p>
+        </li>
+        <li style="float:bottom left" class="left-bottom">
+          <p> <b><b>3.8486</b></b></p>
+        </li>
+      </div>
+    
+      <div class="right col-1" style="float: right;">
+        <li class="right-top">
+          <p style="color: #20b26c; padding-left: 20px">+16.63%</p>
+        </li>
+        <li class="right bottom" style="text-align: right;">
+          <p>VOL780.58K</p>
+        </li>
+      </div>
+      <hr>
+    </div>         
+  </div>
+
+  <div style="padding: 24px !important; height: 64px; width: 279px;;" class="content">
+    
+    <div class="row">    
+      <div style="float: left;">
+        <li>
+          <img src="assets/mask.svg" alt="" float="left" height="32" width="32" padding="">
+        </li>
+      </div>
+    
+      <div class="col-9" style="float: none; margin: 0 auto; padding: 0px 0px 0px 8px">
+        <li style="float:top left" class="left-top">
+          <p style="margin: 0; padding: 0px" >MASK/USDT</p>
+        </li>
+        <li style="float:bottom left" class="left-bottom">
+          <p> <b><b>3.8486</b></b></p>
+        </li>
+      </div>
+    
+      <div class="right col-1" style="float: right;">
+        <li class="right-top">
+          <p style="color: #20b26c; padding-left: 20px">+16.63%</p>
+        </li>
+        <li class="right bottom" style="text-align: right;">
+          <p>VOL780.58K</p>
+        </li>
+      </div>
+      <hr>
+    </div>         
+  </div>
+
+  <div style="padding: 24px !important; height: 64px; width: 279px;;" class="content">
+    
+    <div class="row">    
+      <div style="float: left;">
+        <li>
+          <img src="assets/mask.svg" alt="" float="left" height="32" width="32" padding="">
+        </li>
+      </div>
+    
+      <div class="col-9" style="float: none; margin: 0 auto; padding: 0px 0px 0px 8px">
+        <li style="float:top left" class="left-top">
+          <p style="margin: 0; padding: 0px" >MASK/USDT</p>
+        </li>
+        <li style="float:bottom left" class="left-bottom">
+          <p> <b><b>3.8486</b></b></p>
+        </li>
+      </div>
+    
+      <div class="right col-1" style="float: right;">
+        <li class="right-top">
+          <p style="color: #20b26c; padding-left: 20px">+16.63%</p>
+        </li>
+        <li class="right bottom" style="text-align: right;">
+          <p>VOL780.58K</p>
+        </li>
+      </div>
+      <hr>
+    </div>         
   </div>
 
   
-</nav>
+
+</div>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slideps -->
+    <div class="carousel-inner">
+      <div class="slogan-wrap">
+        <div class="item active">
+         
+        </div>
+      </div>
   
 
+    <div class="item">
+      <div class="slogan-wrap">
+       
+     </div>
+    </div>
 
-</body>
+    <div class="item">
+      <div class="slogan-wrap">
+       
+    </div>
+    </div>
+  </div> 
+</div> 
+
+<div style="margin: 0 auto; padding: 0px; height: 64px; width: 327px;" class="header">
+  <h1 style="margin: 0 auto; font-size: 24px; line-height: 32px; min-height: 32px; font-weight: 700;"> Explore Our Full Product Suite Here</h1>
+</div>
+<br><br>
+
+<div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/spot.jpg); --mobile-bg:url(assets/spot.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 20px;">
+  <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+    <div style= "margin: 0 auto;" class="row">
+      <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+      
+      <!-- click here  -->
+      
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 24px;">Spot</h1>
+        <p style="color:gray; font-size: small;">Buy and sell popular Crypto on the...   </p> <br> <br>
+        <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+          <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px"></div>
+
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+  <div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/Derivative.jpg); --mobile-bg:url(assets/Derivative.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+    <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+      <div style= "margin: 0 auto;" class="row">
+        <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+        
+        <!-- click here  -->
+        
+          <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600;font-size: 24px; ">Derivative</h1>
+          <p style="color:gray; font-size: small;">Upgrade your trade with USDT perpe...  </p> <br> <br>
+          <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+            <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+  
+        </div>
+      </div>
+    </div>
+
+
+    <br><br>
+
+    <div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/NFT.jpg); --mobile-bg:url(assets/NFT.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+      <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+        <div style= "margin: 0 auto;" class="row">
+          <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+          
+          <!-- click here  -->
+          
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 20px;">NFT Marketplace</h1>
+            <p style="color:gray; font-size: small;">Things we didn't even want   </p> <br> <br>
+            <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+              <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+    
+          </div>
+        </div>
+      </div>
+
+
+      <br><br>
+
+      <div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/Coinmeta\ Earn.jpg); --mobile-bg:url(assets/Coinmeta\ Earn.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+        <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+          <div style= "margin: 0 auto;" class="row">
+            <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+            
+            <!-- click here  -->
+            
+              <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 20px;">Coinmeta Earn</h1>
+              <p style="color:gray; font-size: small;">Get high yields with your diverse...   </p> <br> <br>
+              <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+                <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+      
+            </div>
+          </div>
+        </div>
+
+
+        <br><br>
+
+        <div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/Buy\ crypto.jpg); --mobile-bg:url(assets/Buy\ crypto.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+          <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+            <div style= "margin: 0 auto;" class="row">
+              <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+              
+              <!-- click here  -->
+              
+                <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 24px;">Buy Crypto</h1>
+                <p style="color:gray; font-size: small;">Purchase crypto with you credit or...  </p> <br> <br>
+                <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+                  <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+        
+              </div>
+            </div>
+          </div>
+<br><br>
+          <div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/background\ new.jpg); --mobile-bg:url(assets/new\ background.jpg);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+            <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+              <div style= "margin: 0 auto;" class="row">
+                <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+                
+                <!-- click here  -->
+                
+                  <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 24px;">Option</h1>
+                  <p style="color:gray; font-size: small;">Diversify your trade with stableco...  </p> <br> <br>
+                  <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+                    <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+          
+                </div>
+              </div>
+            </div>
+<br><br>
+
+<div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/Coinmeta\ web3.png); --mobile-bg:url(assets/Coinmeta\ web3.png);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+  <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+    <div style= "margin: 0 auto;" class="row">
+      <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+      
+      <!-- click here  -->
+      
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 22px;">Coinmeta web3</h1>
+        <p style="color:gray; font-size: small;">Your trusted gateway to web.3  </p> <br> <br>
+        <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+          <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+<div class="box Custom_customSpotlight__Txln7" style="--desktop-bg:url(assets/DEX.png); --mobile-bg:url(assets/DEX.png);background-color:white; width: 327px; margin: 0 auto; border-radius: 12px;">
+  <!-- <div  class="Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="border-radius: 12px;height: 210px; width: 327px; background-size: auto;"> -->
+    <div style= "margin: 0 auto;" class="row">
+      <div class="col-6 box-1" style="background-color: transparent; margin: 0 auto; padding: 0px 0px 0px 10px;" >
+      
+      <!-- click here  -->
+      
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-weight: 600; font-size: 24px;">DEX</h1>
+        <p style="color:gray; font-size: small;">Scale derivatives trades on a non-co...  </p> <br> <br>
+        <div class="click-button" style= "border-radius: 12px; padding: 0px 24px; margin: 0 auto; margin-left: 5px; width: 128px; background-color: #0efc89;" >
+          <a style="margin: 0 auto; font-size:smaller; text-decoration: none; color:#0b502f" class="click" href="#"> click here  <img src="assets/arrow-right-svgrepo-com.svg" alt=""> </a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="new row Wrapper_wrapper__Cfg58 Custom_content__s9qmn" style="height: 180px; width: 100%; object-fit: cover; margin: 5px 0px 15px 0px; background-position: top; border-radius: 30px;"></div>
+
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+<div style="height: 42px; width: 100%;padding-left: 24px; border-top-left-radius: 0; border-bottom-left-radius: 0; margin: 0 auto;">
+  <div class="string-half" style="font-size: 24px; ">Get Started in 3 Steps</div>
+</div>
+
+<div style="background-color: white" class="container-1">
+  <div style="height: 42px; width: 100%;padding-left: 20px; border-top-left-radius: 0; border-bottom-left-radius: 0; margin: 0 auto;">
+    <h1 style="font-size: 18px; font-weight: 600; font-family:Arial, Helvetica, sans-serif;">Get Started in 3 Steps</h1>
+  </div>
+</div>
+
+<!--  -->
+
+
+
+
+
+
+
+
+
+<!--  -->
+<br><br>
+  <footer>
+    
+    <div>
+      <img src="/assets/logo3.png" alt="">
+    </div>
+
+    <div>
+      <ul>
+        <li>
+
+        </li>
+      </ul>
+    </div>
+    
+    <div class="footer-container">
+      <div class="footer-item">
+        <h3 class="toggle"> About  <span class="caret"></span></h3>
+        <ul class="dropdown">
+          <li><a href="#">About Coinmeta</a></li>
+          <li><a href="#">Coinmeter communities</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">Risk Disclosure</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="toggle"> Services  <span class="caret"></span></h3>
+        <ul class="dropdown">
+          <li><a href="#">One-Click Buy</a></li>
+          <li><a href="#">P2P Trading (0 Fees)</a></li>
+          <li><a href="#">Vip Program</a></li>
+          <li><a href="#">Institutional Services</a></li>
+          <li><a href="#">Listing Application</a></li>
+          <li><a href="#">Tax API</a></li>
+          <li><a href="#">Audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="toggle"> Support  <span class="caret"></span></h3>
+        <ul class="dropdown">
+          <li><a href="#">User Feedback</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Submit a Request</a></li>
+          <li><a href="#">Coinmeta Learn</a></li>
+          <li><a href="#">Trading Fee</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Authenticity Check</a></li>
+          <li><a href="#">P2P FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="toggle"> Products  <span class="caret"></span></h3>
+        <ul class="dropdown">
+          <li><a href="#">Trade</a></li>
+          <li><a href="#">Derivative</a></li>
+          <li><a href="#">Earn</a></li>
+          <li><a href="#">Launchpad</a></li>
+          <li><a href="#">NFT</a></li>
+          <li><a href="#">Charity</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="by-footer-large-cr">
+      <p>© 2018-2023 coinmeta.com. All rights reserved.</p>
+      <div style="padding-left: 20px" class="by-footer-large-cr__terms">
+        <a href="#" rel="nofollow noopener" target="_blank">Terms of Service</a>
+        <span style="padding: 0px 5px" class="by-footer-large-cr__line">|</span>
+        <a href="#" rel="nofollow noopener" target="_blank">Privacy Terms</a>
+      </div>
+    </div>
+
+  </footer>
+    
+  
+  
+  
+  <script>
+   const toggles = document.querySelectorAll(".toggle");
+
+   toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle ("active");
+      const dropdown = toggle.nextElementSibling;
+      dropdown.classList.toggle("active");
+    });
+   });
+  </script>
+  
+  
+  
+  
+    
+  </body>
 </html>
