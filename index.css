@@ -7,8 +7,22 @@ footer {
 body {
   line-height: 1;
   margin: 0;
+  background-image: url(assets/background\ new.svg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
 }
 
+
+/*  */
+
+.nav {
+  /* margin: 0px;
+  padding: 0px */
+  /* position: fixed;  */
+  /* top: 0; 
+  width: 100%;  */
+  /* z-index: 1000; */
+}
 .navbar-inverse .navbar-nav > li > a {
   color:#f7a600;
   text-align: left;
@@ -32,35 +46,44 @@ body {
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
   background-color: transparent;
   border-color: #101010;
-  width: 200px;
+  width: 100%;
+  /* width: 200px; */
   text-align: left;
   position: absolute;
-  right: 0;
+  /* right: 0; */
 }
 
+.navbar-toggle:hover{
+   background-color: #000 !important;
+}
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     background-color: transparent;
     border-color: #101010;
-    /* width:100%; */
     text-align: right;
 }
 
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+.container-fluid>.navbar-collapse, .container>.navbar-collapse, .container>.navbar-header {
     background-color: black;
     margin-right: -15px;
     margin-left: -15px;
 }
 
+.navbar-header{
+  background-image: url(assets/background\ new.jpg);
+  background-color: #000;
+  margin: 0px;
+}
+
+.navbar-header:hover{
+  background-color: black;
+  background-image: none;
+}
 
 .navbar-nav>li>.dropdown-menu {
     margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-   
-    
-    
-
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
@@ -71,6 +94,12 @@ body {
 .navbar-inverse .container-fluid .navbar-header div.logo >img {
     border-right: 15px;
 }
+
+/*  */
+/* .right-button{
+
+} */
+
 
 .Wrapper_wrapper__Cfg58 {
   height: 400px;
@@ -83,6 +112,19 @@ body {
 } */
 
 .string-half{
+  color: #fff;
+  height: 28px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  /* font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.string-half-top{
+  color: #000;
+  height: 28px;
+  width: 100%;
   font-size: 20px;
   font-weight: 600;
   /* font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif; */
@@ -177,7 +219,7 @@ border-radius: 50px;
 label   {
   background-color: #f7a600;
   border-radius: 12px;
-  width: 30%;
+  width: 20%;
   height: 40px;
   margin-left: 60px;
   padding-top: 10.5px;
@@ -248,7 +290,6 @@ footer {
 
 .by-footer-large-cr {
   background-color: #000;
-  /* color: #575b61; */
   color: #fff;
 }
 .by-footer-large-cr, .by-footer-large-cr__terms {
@@ -362,9 +403,14 @@ li {
 .col-12 {width: 100%;}
 
 
+#tradingview_810df-wrapper.chart{
+  width:100%;
+}
 
 
 @media (min-width: 767px){
+
+
   .navbar-nav .open ul.dropdown-menu {
     position: relative;
     float: none;
@@ -380,6 +426,7 @@ li {
     
     .collapse .navbar-collapse {
     background-color: black;
+    width: 200px;
 } 
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
